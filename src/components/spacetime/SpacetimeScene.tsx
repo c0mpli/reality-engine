@@ -71,7 +71,7 @@ export function SpacetimeScene({ events, tLevel, showGrid, showRegions, onPlace 
       <PlacementPlane tLevel={tLevel} onPlace={onPlace} />
       {events.map(e => <EventMarker key={e.id} event={e} />)}
 
-      <EffectComposer disableNormalPass>
+      <EffectComposer>
         <Bloom luminanceThreshold={0.5} mipmapBlur luminanceSmoothing={0.5} intensity={1.5} />
       </EffectComposer>
     </>

@@ -21,7 +21,7 @@ const modules: Module[] = [
     path: '/lorentz',
     title: 'Lorentz Transformations',
     description: 'See how changing reference frames rotates the spacetime diagram.',
-    status: 'soon',
+    status: 'ready',
   },
   {
     path: '/worldlines',
@@ -85,7 +85,7 @@ export default function Landing() {
           </div>
           
           <div className="grid grid-cols-1 gap-3.5">
-            {modules.map((m, i) => (
+            {modules.map((m) => (
               m.status === 'ready' ? (
                 <Link key={m.path} to={m.path} className="block no-underline group outline-none">
                   <Card 

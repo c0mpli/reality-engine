@@ -93,7 +93,7 @@ export function WormholeScene() {
         </div>
       </Html>
 
-      <EffectComposer disableNormalPass>
+      <EffectComposer>
         <Bloom luminanceThreshold={0.5} mipmapBlur luminanceSmoothing={0.5} intensity={1.5} />
       </EffectComposer>
     </>
